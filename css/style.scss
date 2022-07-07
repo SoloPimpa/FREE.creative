@@ -1,0 +1,231 @@
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "bootstrap.css";
+@import "stylesheet.css";
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+.main_banner {
+  height: 100vh;
+
+  .item {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    height: 100vh;
+    @include max-screen(767px) {
+      background-image: url("../images/52.jpg");
+    }
+
+    &.item_2 {
+      background-image: url("../images/banner_01.jpg");
+    }
+
+    &.item_3 {
+      background-image: url("../images/banner_02.jpg");
+    }
+
+    &.item_4 {
+      background-image: url("../images/banner_03.jpg");
+    }
+  }
+}
+
+header {
+  z-index: 2;
+
+  p {
+    font-family: '20 Kopeek', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    @include max-screen(768px) {
+      font-size: 13px;
+    }
+    @include max-screen(414px) {
+      font-size: 11px;
+      line-height: 17px;
+    }
+    @include max-screen(375px) {
+      font-size: 9px;
+      line-height: 15px;
+    }
+    @include max-screen(375px) {
+      font-size: 7px;
+    }
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-family: '20 Kopeek', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  .nav-item {
+    &:first-of-type {
+      a {
+        font-family: '20 Kopeek', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 7px 30px;
+        max-width: 206px;
+        @include max-screen(992px) {
+          margin: 15px;
+        }
+
+        &:hover {
+          background-color: white;
+
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      a {
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        padding: 12px;
+        height: 36px;
+        width: 36px;
+        margin-left: 23px;
+        position: relative;
+        @include max-screen(992px) {
+          margin-bottom: 15px;
+        }
+
+        &:hover {
+          background-color: black;
+          border: 1px solid black;
+        }
+
+        &:before {
+          content: "";
+          background-image: url(../images/facebook.svg);
+          width: 7px;
+          height: 13px;
+          position: absolute;
+        }
+      }
+    }
+
+    &:last-of-type {
+      a {
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        padding: 12px;
+        height: 36px;
+        width: 36px;
+        margin-left: 23px;
+        position: relative;
+
+        &:hover {
+          background-color: black;
+          border: 1px solid black;
+        }
+
+        &:before {
+          content: "";
+          background-image: url(../images/instagram.svg);
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.owl-dots, .owl-nav {
+  position: absolute;
+}
+.navbar-collapse{
+  @include max-screen(992px) {
+    background: darkgrey;
+    position: absolute;
+    top:100%;
+    right: 0;
+    opacity: 0.9;
+    z-index: 10;
+  }
+}
+.navbar-nav{
+  @include max-screen(992px) {
+    padding: 10px;
+  }
+}
+.content {
+  z-index: 2;
+  top: 25%;
+  left: 9%;
+  align-content: center;
+  @include max-screen(992px) {
+    color: #FFFFFF;
+  }
+
+  a {
+    font-family: '20 Kopeek', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 40px;
+    padding: 23px 47px;
+    margin-right: 20px;
+    @include max-screen(992px) {
+      font-size: 14px;
+      display: block;
+      box-sizing: border-box;
+      background: none;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+      background: black;
+      border-radius: 40px;
+    }
+  }
+
+  h1 {
+    font-family: '20 Kopeek Book', sans-serif;
+    font-size: 55px;
+    line-height: 100%;
+    color: #181818;
+    margin-bottom: 30px;
+    @include max-screen(992px) {
+      font-size: 30px;
+    }
+
+  }
+  p {
+    font-family: '20 Kopeek Book', sans-serif;
+    font-size: 34px;
+    line-height: 110%;
+    color: #181818;
+    margin-bottom: 65px;
+    @include max-screen(992px) {
+      font-size: 20px;
+    }
+  }
+}

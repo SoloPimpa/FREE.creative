@@ -1,0 +1,223 @@
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "bootstrap.css";
+@import "stylesheet.css";
+.main_banner {
+  height: 100vh;
+}
+.main_banner .item {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .main_banner .item {
+    background-image: url("../images/52.jpg");
+  }
+}
+.main_banner .item.item_2 {
+  background-image: url("../images/banner_01.jpg");
+}
+.main_banner .item.item_3 {
+  background-image: url("../images/banner_02.jpg");
+}
+.main_banner .item.item_4 {
+  background-image: url("../images/banner_03.jpg");
+}
+
+header {
+  z-index: 2;
+}
+header p {
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  header p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 414px) {
+  header p {
+    font-size: 11px;
+    line-height: 17px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header p {
+    font-size: 7px;
+  }
+}
+header .navbar-light .navbar-nav .nav-link {
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+header .nav-item:first-of-type a {
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 7px 30px;
+  max-width: 206px;
+}
+@media screen and (max-width: 992px) {
+  header .nav-item:first-of-type a {
+    margin: 15px;
+  }
+}
+header .nav-item:first-of-type a:hover {
+  background-color: white;
+}
+header .nav-item:nth-child(2) a {
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  padding: 12px;
+  height: 36px;
+  width: 36px;
+  margin-left: 23px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  header .nav-item:nth-child(2) a {
+    margin-bottom: 15px;
+  }
+}
+header .nav-item:nth-child(2) a:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+header .nav-item:nth-child(2) a:before {
+  content: "";
+  background-image: url(../images/facebook.svg);
+  width: 7px;
+  height: 13px;
+  position: absolute;
+}
+header .nav-item:last-of-type a {
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  padding: 12px;
+  height: 36px;
+  width: 36px;
+  margin-left: 23px;
+  position: relative;
+}
+header .nav-item:last-of-type a:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+header .nav-item:last-of-type a:before {
+  content: "";
+  background-image: url(../images/instagram.svg);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+}
+
+.owl-dots, .owl-nav {
+  position: absolute;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
+    background: darkgrey;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0.9;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    padding: 10px;
+  }
+}
+
+.content {
+  z-index: 2;
+  top: 25%;
+  left: 9%;
+  align-content: center;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    color: #FFFFFF;
+  }
+}
+.content a {
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+  text-decoration: none;
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 23px 47px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  .content a {
+    font-size: 14px;
+    display: block;
+    box-sizing: border-box;
+    background: none;
+  }
+}
+.content a:last-of-type {
+  margin-right: 0;
+}
+.content a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: black;
+  border-radius: 40px;
+}
+.content h1 {
+  font-family: "20 Kopeek Book", sans-serif;
+  font-size: 55px;
+  line-height: 100%;
+  color: #181818;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
+.content p {
+  font-family: "20 Kopeek Book", sans-serif;
+  font-size: 34px;
+  line-height: 110%;
+  color: #181818;
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 992px) {
+  .content p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
